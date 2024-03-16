@@ -18,8 +18,8 @@ const atTheOldToad = {
 };
 
 atTheOldToad.addPotion({ name: 'Invisibility', price: 620 });
-//console.log(getPotions());
-console.log(getTotalPrice());
+//console.log(potions);
+//console.log(totalPrice);
 atTheOldToad.addPotion({ name: 'Power potion', price: 270 });
-console.log(getPotions());
-console.log(getTotalPrice());
+//console.log(potions);
+//console.log(totalPrice);
