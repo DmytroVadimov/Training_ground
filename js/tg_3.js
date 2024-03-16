@@ -12,14 +12,15 @@ const atTheOldToad = {
   },
   getTotalPrice() {
     let totalPrice = 0;
-    for (potion of this.potions) totalPrice += potion.price;
-    return totalPrice;
+    for (const potion of this.potions) {
+      totalPrice += potion.price;
+    }
+    return `Total Price: ${totalPrice}`;
   },
 };
-
 atTheOldToad.addPotion({ name: 'Invisibility', price: 620 });
-//console.log(potions);
-//console.log(totalPrice);
+console.log(atTheOldToad.potions);
+console.log(atTheOldToad.getTotalPrice());
 atTheOldToad.addPotion({ name: 'Power potion', price: 270 });
-//console.log(potions);
-//console.log(totalPrice);
+console.log(atTheOldToad.potions);
+console.log(atTheOldToad.getTotalPrice());
