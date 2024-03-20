@@ -19,5 +19,11 @@ const books = [
   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
 ];
 
-const titles = books.map(book => book.title);
-console.log(titles);
+//const titles = books.map(book => book.title);
+//const authors = books.map(book => book.author);
+const ratings = books.map(book => book.rating);
+let ratingsAverage = 0;
+for (const item of ratings) {
+  ratingsAverage += item / ratings.length;
+}
+console.log(ratingsAverage);
